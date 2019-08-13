@@ -1,0 +1,8 @@
+<import src = "../start/start-template.wxml" />
+<template name="movieTemplate">
+  <view class="movie-container">
+    <image class="movie-img" src="{{coverurl}}"></image>
+    <text class="movie-title">{{title}}</text>
+    <template is="startTemplate" data="{{start:start,score:avarea}}"/>
+  </view>
+</template>

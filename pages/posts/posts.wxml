@@ -1,0 +1,28 @@
+<!--pages/posts/posts.wxml-->
+<view>
+   <swiper
+   autoplay='{{autoplay}}'
+   indicator-dots='{{indicatorDots}}'
+   >  
+     <block wx:for="{{imgurls}}">
+        <swiper-item>
+         <image src="{{item}}"></image>
+       </swiper-item>
+     </block>                         
+   </swiper>
+   <view wx:for="{{artlist}}" class="posts-contain" catchtap='oneTap'  data-item="{{item.postid}}" data-post-name='{{name}}'>
+     <view class="post-auth-date">
+        <image class="post-auth" src="{{item.url}}"></image>
+        <text class="post-date">{{item.time}}</text> 
+     </view>
+        <text class="post-title">{{item.title}}</text>
+        <image src="{{item.conurl}}" class="post-image"></image>
+        <text class="post-con">{{item.contain}}</text>
+        <view class="post-like">
+            <image src="/images/icon/chat.png" class="post-like-image"></image>
+            <text class="post-like-font">52</text>
+            <image src="/images/icon/view.png" class="post-like-image"></image>
+            <text class="post-like-font">92</text>
+        </view>
+   </view>
+</view>

@@ -1,0 +1,2 @@
+<import src="../movie-gard/movie-gard-template.wxml" />
+<template is="movieGradTemplate" data="{{movie}}" />

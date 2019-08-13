@@ -1,0 +1,20 @@
+<!--pages/posts-detail/posts-detail.wxml-->
+<view class="detail-container">
+  <image src="{{list.headsrc}}" class='head-image'></image>
+  <view class="auth-date">
+    <image src="{{list.avatar}}" class="avatar"></image>
+    <text class="author">{{list.author}}</text>
+    <text class="contast">{{list.contast}}</text>
+    <text class="date">{{list.date}}</text>
+  </view>
+  <text class="title">{{list.title}}</text>
+  <view class="tool">
+    <view class="cicle">
+      <image wx:if="{{colled}}" src="/images/icon/collection.png"></image>
+      <image wx:else src="/images/icon/collection-anti.png" bindtap='onecol'></image>
+      <image class="share-img" src="/images/icon/share.png"></image>
+    </view>
+    <view class="hor"></view>
+  </view>
+  <text class="deatil">{{list.deatil}}</text>
+</view>

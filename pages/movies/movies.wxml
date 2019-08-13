@@ -1,0 +1,13 @@
+<import src="move-list/move-list-template.wxml" />
+<view class="container">
+  <view class="movies-template">
+    <template class="movies-template" is="moveListtemplate" data ="{{...innerurl}}"/>
+  </view>
+  <view class="movies-template">
+    <template class="movies-template" is="moveListtemplate" 
+    data ="{{...top250}}"/>
+  </view>
+  <view class="movies-template">
+    <template class="movies-template" is="moveListtemplate" data="{{...innerurl}}"/>
+  </view>
+</view>
